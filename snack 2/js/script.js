@@ -37,13 +37,15 @@ const falliSquadre = [];
 var squadra;
 for ( let i = 0; i < squadre.length; i++ ) {
     squadra = squadre[i];
-    let { nome, puntiFatti, falliSubiti} = squadra;
+    let { nome, puntiFatti, falliSubiti  } = squadra;
     puntiFatti = getRndInteger(1, 12);
     falliSubiti = getRndInteger(1, 12);
+    squadra.falliSubiti = falliSubiti;
+    squadra.puntiFatti = puntiFatti;
     falliSquadre.push({
         nome: nome, 
         falliSubiti: falliSubiti
-
     });
 };
+console.log(squadre);
 console.log(falliSquadre);
