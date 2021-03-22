@@ -22,7 +22,7 @@ function getRndInteger(min, max) {
 // */
 function arrayInterval(a, b, array) {
     var arryInt = [];
-    for ( var i = (a - 1); i < b; i++ ) {
+    for ( var i = a; i <= b && < array.length; i++ ) {
         arryInt.push(array[i]);
     }
     return arryInt;
