@@ -29,7 +29,7 @@ do {
 } while ( numeroB < numeroA || numeroB > 20 );
 
 
-const newArray = numbers.filter((item) => {
-    return numbers.indexOf(item) >= numeroA && numbers.indexOf(item) <= numeroB;
+const newArray = numbers.filter((item, index) => {
+    return index >= numeroA && index <= numeroB;
 });
 console.log(newArray);
